@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 50px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+header .logo h1 {
+  font-size: 24px;
+}
+
+header .logo span {
+  color: #ffc600;
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.menu-topo ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu-topo ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-topo ul li a:hover {
+  color: #ffc600;
+}
+
+.menu-topo input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 20px;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  margin: 20px 50px;
+  gap: 20px;
+}
+
+/* Menu lateral */
+.menu-lateral {
+  width: 250px;
+}
+
+.menu-lateral h2 {
+  color: #ffc600;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.menu-lateral p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+  flex: 1;
+}
+
+.introducao {
+  background-color: #ffc600;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.introducao p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Acervo digital */
+.acervo-digital h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.acervo-digital p {
+  margin-bottom: 15px;
+}
+
+.videogames {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.videogames .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.videogames .game img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.videogames .game span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.videogames .game:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+}
